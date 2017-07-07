@@ -16,11 +16,13 @@
     <h4>
       <%= review.content %>
       <%= link_to product_review_path(@product, review), data: {method: :delete} do %>
-        <span class="hidden">Delete Review</span>
-        <span class="glyphicon glyphicon-remove"></span>
+        <% if current_user.try(:admin) %>
+          <span class="hidden">Delete Review</span>
+          <span class="glyphicon glyphicon-remove"></span>
+        <% end %>
       <% end %>
     </h4>
-    <p>by <%= review.username %></p>
+    <p>by <%= username_of(review) %></p>
     <p>Rating: <%= review.rating %></p>
   <% end %>
 
