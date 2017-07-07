@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  has_many :reviews
+
   attr_accessor :login
 
   # Include default devise modules. Others available are:
