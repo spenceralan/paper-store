@@ -1,7 +1,12 @@
 #header-partial {
-  h1, a {
-    color: #333;
+  .jumbotron {
+    background-image: image-url("crinkled.jpeg");
+  }
+
+  h1, h4, a {
+    color: #FAFAFA;
     text-decoration: none;
     font-variant: small-caps;
+    text-shadow: 1px 1px 1px #333;
   }
 }
