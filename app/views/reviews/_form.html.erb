@@ -1,8 +1,6 @@
 <%= render "layouts/errors", :object => @review %>
 
 <%= form_for [@product, @review] do |f| %>
-  <%= f.label :username %>
-  <%= f.text_field :username, class: "form-control" %>
   <%= f.label :content %>
   <%= f.text_field :content, class: "form-control" %>
   <%= f.label :rating %>

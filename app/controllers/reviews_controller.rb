@@ -7,7 +7,11 @@ class ReviewsController < ApplicationController
 
   def create
     @product = Product.find(params[:product_id])
-    @review = @product.reviews.new(review_params)
+    @review = @product.reviews.new(
+      user_id: current_user.id,
+      content: review_params.fetch(:content),
+      rating: review_params.fetch(:rating)
+    )
     if @review.save
       flash[:notice] = "The review has been added."
       redirect_to product_path(@product)
