@@ -1,0 +1,12 @@
+<%= render "layouts/errors", :object => @product %>
+
+<%= form_for @product do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :description %>
+  <%= f.text_field :description, class: "form-control" %>
+  <%= f.label :price %>
+  <%= f.text_field :price, class: "form-control" %>
+  <br>
+  <%= f.submit class: "btn btn-default" %>
+<% end %>

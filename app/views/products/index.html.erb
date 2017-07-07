@@ -1,5 +1,16 @@
 <div id="products-index-page">
+
+  <% if current_user.try(:admin?) %>
+    <%= link_to "Add Product", new_product_path, class: "btn btn-default" %>
+  <% end %>
+
   <h2>Browse our amazing selection of paper products!</h2>
+
+  <% @products.each do |product| %>
+    <h3><%= link_to product.name, product_path(product) %></h3>
+  <% end %>
+  
+  <%= paginate @products %>
 </div>
 
 

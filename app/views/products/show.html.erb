@@ -1,0 +1,30 @@
+<div id="products_show">
+
+  <% if current_user.try(:admin?) %>
+    <%= link_to "Edit Product", edit_product_path(@product), class: "btn btn-default" %>
+    <%= link_to "Delete Product", product_path(@product), data: {method: :delete}, class: "btn btn-danger" %>
+  <% end %>
+
+  <h1><%= @product.name %></h1>
+  <h4><%= @product.description %></h4>
+  <h4><%= number_to_currency(@product.price) %></h4>
+  
+  <hr>
+
+  <h2>Reviews <%= link_to "Add Review", new_product_review_path(@product), class: "btn btn-default" unless !current_user %></h2>
+  <% @product.reviews.each do |review| %>
+    <h4>
+      <%= review.content %>
+      <%= link_to product_review_path(@product, review), data: {method: :delete} do %>
+        <span class="hidden">Delete Review</span>
+        <span class="glyphicon glyphicon-remove"></span>
+      <% end %>
+    </h4>
+    <p>by <%= review.username %></p>
+    <p>Rating: <%= review.rating %></p>
+  <% end %>
+
+  <hr>
+
+
+</div>
