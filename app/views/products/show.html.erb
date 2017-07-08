@@ -15,6 +15,7 @@
     Reviews 
     <%= link_to "Add Review", new_product_review_path(@product), class: "btn btn-default" if current_user %>
   </h2>
+  
   <% @product.reviews.each do |review| %>
     <h4>
       <%= review.content %>
