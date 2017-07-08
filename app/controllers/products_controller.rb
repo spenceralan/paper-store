@@ -1,4 +1,9 @@
 class ProductsController < ApplicationController
+  skip_before_action :authenticate_user!, only: [:index, :show]
+  
+  before_action except: [:index, :show] do
+    redirect_to new_user_session_path unless current_user.try(:admin)
+  end
 
   def index
     @products = Product.order(:name).page params[:page]
@@ -41,12 +46,6 @@ class ProductsController < ApplicationController
     else
       render :new
     end
-  end
-
-  def search
-    products = Product.find_by_country(params[:country])
-    @products = products.page params[:page]
-    render :index
   end
 
 private
