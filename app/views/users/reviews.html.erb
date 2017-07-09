@@ -1,0 +1,8 @@
+<div class="container">
+  <h2>Your Reviews</h2>
+  <% @reviews.each do |review| %>
+    <hr>
+    <h4><%= link_to review.product.name, product_path(review.product) %></h4>
+    <p><%= review.content %></p>
+  <% end %>
+</div>
