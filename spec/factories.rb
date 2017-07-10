@@ -22,4 +22,10 @@ FactoryGirl.define do
     price 99.99
   end
 
+  factory :review do
+    content "This is the best review ever left."
+    rating 1
+    product
+  end
+
 end
