@@ -698,7 +698,7 @@
         1,
         null,
         1,
-        33,
+        34,
         1,
         null,
         null,
@@ -732,9 +732,9 @@
         1,
         null,
         1,
-        23,
-        23,
-        23,
+        24,
+        24,
+        24,
         null,
         null
       ],
@@ -885,7 +885,7 @@
         1,
         null,
         1,
-        0,
+        1,
         null,
         null,
         null
@@ -1068,6 +1068,23 @@
         null,
         null
       ],
+      "/Users/lemonfacade/Desktop/paper-company/spec/features/user_reviews_page_spec.rb": [
+        1,
+        null,
+        1,
+        null,
+        2,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/lemonfacade/Desktop/paper-company/spec/models/product_spec.rb": [
         1,
         null,
@@ -1126,6 +1143,6 @@
         null
       ]
     },
-    "timestamp": 1499675506
+    "timestamp": 1499675821
   }
 }
