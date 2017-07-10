@@ -1077,6 +1077,12 @@
         2,
         2,
         null,
+        2,
+        null,
+        2,
+        2,
+        2,
+        null,
         null,
         null,
         null
@@ -1085,6 +1091,14 @@
         1,
         null,
         1,
+        null,
+        2,
+        2,
+        null,
+        2,
+        2,
+        null,
+        2,
         null
       ],
       "/Users/lemonfacade/Desktop/paper-company/spec/models/user_spec.rb": [
@@ -1112,6 +1126,6 @@
         null
       ]
     },
-    "timestamp": 1499673534
+    "timestamp": 1499675506
   }
 }
