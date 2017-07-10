@@ -5,7 +5,12 @@
         1,
         null,
         1,
-        1,
+        null,
+        2,
+        2,
+        null,
+        null,
+        null,
         null
       ],
       "/Users/lemonfacade/Desktop/paper-company/spec/rails_helper.rb": [
@@ -69,6 +74,13 @@
         null,
         1,
         null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
         null,
         null
       ],
@@ -567,7 +579,7 @@
         1,
         null,
         1,
-        2,
+        8,
         0,
         null,
         null,
@@ -826,7 +838,6 @@
         1,
         null,
         1,
-        1,
         null
       ],
       "/Users/lemonfacade/Desktop/paper-company/spec/models/user_spec.rb": [
@@ -837,14 +848,9 @@
         2,
         2,
         null,
-        3,
+        6,
         2,
         2,
-        null,
-        2,
-        2,
-        null,
-        null,
         null,
         1,
         1,
@@ -859,6 +865,6 @@
         null
       ]
     },
-    "timestamp": 1499666075
+    "timestamp": 1499666685
   }
 }

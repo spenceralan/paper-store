@@ -1,5 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe Product, type: :model do
-  pending "add some examples to (or delete) #{__FILE__}"
+describe Product do
+
+  it { should have_attached_file(:image) }
+  it { should validate_attachment_content_type(:image).
+    allowing("image/png", "image/gif").
+    rejecting("text/plain", "text/xml") }
+
 end

@@ -13,7 +13,7 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-
+require "paperclip/matchers"
 require 'simplecov'
 
 SimpleCov.start
@@ -106,4 +106,6 @@ RSpec.configure do |config|
   config.mock_with :rspec do |mocks|
     mocks.verify_partial_doubles = true
   end
+
+  config.include Paperclip::Shoulda::Matchers
 end
