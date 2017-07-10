@@ -4,7 +4,7 @@ This app is unlikely to save the world. But it will help you keep track of every
 
 With user authentication and authorization, users can easily navigate between products and add reviews that are instantly tied to their accounts! If a user has a special admin account, they have the power to add new products and even delete user reviews!
 
-Users will even have the option of viewing all the reviews they have left on one convenient page.
+Users will even have the option of viewing all the reviews they have left on one convenient page. Check it out in the 'Edit Account' section!
 
 ### Prerequisites
 
