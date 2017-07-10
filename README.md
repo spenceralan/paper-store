@@ -41,7 +41,7 @@ bundle exec rails server
 The default host path is http://localhost:3000
 
 
-NOTE: There are two basic accounts that come alone with the test database.
+NOTE: There are two basic accounts that come along with the test database.
 
 #### User
 * username: testuser
