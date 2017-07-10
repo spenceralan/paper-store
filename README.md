@@ -43,11 +43,11 @@ The default host path is http://localhost:3000
 
 NOTE: There are two basic accounts that come alone with the test database.
 
-* User
+#### User
 * username: testuser
 * password: 123456
 
-* Admin
+#### Admin
 * username: admin
 * password: admin123456
 
