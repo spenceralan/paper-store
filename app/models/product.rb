@@ -1,5 +1,5 @@
 class Product < ApplicationRecord
-  has_many :reviews
+  has_many :reviews, dependent: :destroy
   validates :name, :description, presence: true
 
   validates :price,
