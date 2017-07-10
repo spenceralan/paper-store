@@ -16,4 +16,10 @@ FactoryGirl.define do
     admin true
   end
 
+  factory :product do
+    name "Test Product"
+    description "This is an amazing test description"
+    price 99.99
+  end
+
 end
